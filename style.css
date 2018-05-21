@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+#menu{
+    width: 50px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: center;
+    border: dashed 1px;
+}
+#submenu{
+    display: none;
+    width: 120px;
+    height: 30px;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+#errors{
+    background: url("rssBackBlue_Undocked.png") no-repeat; /*repeat-y center/cover;*/
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+h2{
+    cursor: pointer;
+
+}
+h2:before{
+    margin-right: 5px;
+    text-decoration: underline;
+    color: red;
+    content: '\2605';
+}
+h2.close:before{
+    text-decoration: none;
+    color: gray;
+    content: '\2606';
+}
+.word{
+    position: relative;
+}
+.definit{
+    position: absolute;
+    width: 200px;
+    bottom: -35px;
+    left: 0;
+}
+.form{
+    width: 200px;
+    background-color: #888;
+    position: absolute;
+    display: none;
+}
+#btn2{
+    margin-left: 140px;
+}
+#dashboard{
+    width: 40px;
+    height: 200px;
+    left: 92px;
+    /*margin-left: 720px;*/
+    /*background: #888;*/
+}
+img.aaa{
+    opacity: 1;
+    transition: opacity 1s;
+    animation-name: growProgressBar;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+img.faded{
+    opacity: 0;
+}
+@keyframes growProgressBar{
+    0% {
+        width: 0;
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        width:88%;
+        background-color: green;
+    }
+}
+#gallery{
+    width: 430px;
+    height: 80px;
+    border: solid 1px rebeccapurple;
+}
+#gallery>a>img{
+    width: 80px;
+    height: 70px;
+    border: dashed 1px gray;
+}
+#photo{
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+}
+form#signup{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
